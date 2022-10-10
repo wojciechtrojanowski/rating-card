@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+	--lightGrey: hsl(217, 12%, 63%);
+	--mediumGrey: hsl(216, 12%, 54%);
+	--darkBlue: hsl(213, 19%, 18%);
+	--veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Overpass', sans-serif;
+	background-color: var(--veryDarkBlue);
+	color: var(--white);
+}
+
+.card {
+	width: 90vw;
+	max-width: 450px;
+	background-color: var(--darkBlue);
+	padding: 0.8em;
+	border-radius: 1em;
+}
+
+.img {
+	padding: 0.8em 0;
+}
+
+h1 {
+	padding: 0.2em 0;
+}
+p {
+	font-size: 15px;
+	padding-bottom: 1.2em;
+	color: var(--mediumGrey);
+	line-height: 150%;
+}
+.list {
+	display: flex;
+	justify-content: space-around;
+
+	padding: 0.4em 0;
+}
+.circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+}
+
+.list .circle {
+	cursor: pointer;
+}
+.list .circle:hover {
+	background-color: var(--orange);
+}
+
+.btn {
+	text-align: center;
+	padding: 1em 0;
+}
+button {
+	padding: 0.9em 9em;
+	border: none;
+	background-color: var(--orange);
+	border-radius: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--white);
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: var(--white);
+	color: var(--orange);
+}
+.result {
+	width: 90vw;
+	max-width: 450px;
+	background-color: var(--darkBlue);
+	padding: 1.5em;
+	border-radius: 1em;
+	text-align: center;
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	background-color: var(--mediumGrey);
+	border-radius: 50%;
+}
+
+.result-img {
+	text-align: center;
+	padding: 1em 0;
+}
+
+.result-button {
+	text-align: center;
+	background-color: rgba(50, 60, 50, 40%);
+	padding: 0.8em 3em;
+	color: var(--orange);
+	letter-spacing: normal;
+	text-transform: none;
+	font-weight: normal;
+}
+
+.result h1 {
+	padding: 0.8em 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.count {
+	z-index: 100;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	line-height: 3em;
+	border-radius: 50%;
+}
